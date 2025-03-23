@@ -6,6 +6,10 @@ import PopularTours from "../Popular/Popular";
 const About = () => {
   return (
     <div>
+      <br />
+      <br />
+      <br />
+      <br />
     <div className="about-container">
       <h1>AB Tours & Travels in Dwarka, Nashik</h1>
       <p>
