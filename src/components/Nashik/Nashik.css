@@ -1,5 +1,6 @@
 /* Popular Tours Section */
 .popular-tours {
+  background: url('/src/components/Assets/bg2.jpg') no-repeat center center/cover;
   padding: 80px 0;
   text-align: center;
   background-color: #e6f7f2; /* Light mint teal */
