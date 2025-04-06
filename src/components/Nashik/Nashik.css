@@ -49,6 +49,11 @@ hr {
   }
 
   .popular-tours h1 {
+    font-size: 2.5rem;
+    color: #1fdac4; /* Deep greenish teal */
+    margin-bottom: 10px;
+  }
+  .popular-tours h1 {
     font-size: 2rem;
   }
 
