@@ -1,83 +1,87 @@
 .custom-container {
-    background: url('/src/components/Assets/bg.jpg') no-repeat center center/cover;
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #e0f2f1; /* Light teal */
-  }
-  
-  .custom-title {
-    font-size: 2.5rem;
-    color: #1fdac4; /* Deep teal */
-    margin-bottom: 30px;
-  }
-  
+  background: url("/src/components/Assets/bg.jpg") no-repeat center center / cover;
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #e0f2f1; /* Light teal */
+}
+
+.custom-title {
+  font-size: 2.5rem;
+  color: #1fdac4; /* Deep teal */
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.custom-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.custom-box {
+  background-color: #00897b; /* Medium teal */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.custom-icon {
+  font-size: 40px;
+  color: #e0f7fa; /* Lighter teal */
+  margin-bottom: 15px;
+}
+
+.custom-btn {
+  background-color: #1fdac4; /* Dark teal */
+  color: white;
+  padding: 10px 15px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #004d40; /* Even darker teal */
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
   .custom-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   .custom-box {
-    background-color: #00897b; /* Medium teal */
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 300px;
-    transition: transform 0.3s ease;
+    width: 90%;
   }
-  
-  .custom-box:hover {
-    transform: translateY(-5px);
+}
+
+@media (max-width: 480px) {
+  .custom-title {
+    font-size: 2rem;
   }
-  
+
+  .custom-box {
+    width: 100%;
+    padding: 15px;
+  }
+
   .custom-icon {
-    font-size: 40px;
-    color: #e0f7fa; /* Lighter teal */
-    margin-bottom: 15px;
+    font-size: 35px;
   }
-  
-  .custom-btn {
-    background-color: #1fdac4; /* Dark teal */
-    color: white;
-    padding: 10px 15px;
-    margin-top: 15px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .custom-btn:hover {
-    background-color: #004d40; /* Even darker teal */
-  }
-  /* ✅ Responsive Design */
-  @media (max-width: 768px) {
-    .custom-grid {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .custom-box {
-      width: 90%;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .custom-title {
-      font-size: 2rem;
-    }
-  
-    .custom-box {
-      width: 100%;
-      padding: 15px;
-    }
-  
-    .custom-icon {
-      font-size: 35px;
-    }
-  }
-  
+}
+

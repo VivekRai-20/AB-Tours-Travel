@@ -2,6 +2,7 @@ import React from "react";
 import "./About.css";
 import Custom from "../Custom/Custom"
 import PopularTours from "../Popular/Popular";
+import Gallery from '../Gallery/Gallery'
 
 const About = () => {
   return (
@@ -104,6 +105,7 @@ const About = () => {
         </li>
       </ul>
     </div>
+    <Gallery/>
     <PopularTours/>
     <Custom/>
     </div>
